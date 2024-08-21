@@ -65,8 +65,8 @@
     <!-- Filled in by maven-hpi-plugin from the MANIFEST.MF entry in jenkins.war, but we provide a default value for the benefit of IDEs. -->
     <jenkins.addOpens>--add-opens java.base/java.lang=ALL-UNNAMED --add-opens java.base/java.io=ALL-UNNAMED --add-opens java.base/java.util=ALL-UNNAMED</jenkins.addOpens>
 
-    <releaseProfiles />
-    <arguments />
+    <releaseProfiles/>
+    <arguments/>
     <argLine>-Xms768M -Xmx768M -XX:+HeapDumpOnOutOfMemoryError -XX:+TieredCompilation -XX:TieredStopAtLevel=1 @{jenkins.addOpens} @{jenkins.insaneHook}</argLine>
 
     <access-modifier-checker.version>1.33</access-modifier-checker.version>
@@ -110,7 +110,7 @@
     <stapler-maven-plugin.version>175.vff879c6738b_6</stapler-maven-plugin.version>
 
     <!-- Filled in by "maven-hpi-plugin" with the path to "org-netbeans-insane-hook.jar" extracted from "jenkins-test-harness" -->
-    <jenkins.insaneHook />
+    <jenkins.insaneHook/>
 
     <!--
       The MS_EXPOSE_REP, EI_EXPOSE_REP, EI_EXPOSE_REP2, EI_EXPOSE_STATIC_REP2, MS_EXPOSE_BUF,
@@ -138,13 +138,13 @@
     <npmDownloadRoot>https://repo.jenkins-ci.org/npm-dist/</npmDownloadRoot>
 
     <!-- changed by -DskipTests, if specified - see profile -->
-    <skip.node.tests />
+    <skip.node.tests/>
 
     <!-- changed by -DskipLint, if specified - see profile -->
-    <skip.node.lint />
+    <skip.node.lint/>
 
     <!-- may use e.g. -\-silent (without backslash) -->
-    <npm.loglevel />
+    <npm.loglevel/>
 
     <!-- To skip the wizard by default in hpi:run. It should not impact other goals. -->
     <hudson.Main.development>true</hudson.Main.development>
@@ -184,7 +184,7 @@
         <!-- TODO https://github.com/jenkinsci/plugin-pom/issues/936 delete when baseline is 2.459+ -->
         <groupId>jakarta.servlet</groupId>
         <artifactId>jakarta.servlet-api</artifactId>
-        <version>4.0.4</version>
+        <version>6.1.0</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
@@ -698,14 +698,14 @@
         <artifactId>spotless-maven-plugin</artifactId>
         <configuration>
           <java>
-            <endWithNewline />
-            <importOrder />
+            <endWithNewline/>
+            <importOrder/>
             <indent>
               <spaces>true</spaces>
             </indent>
-            <palantirJavaFormat />
-            <removeUnusedImports />
-            <trimTrailingWhitespace />
+            <palantirJavaFormat/>
+            <removeUnusedImports/>
+            <trimTrailingWhitespace/>
           </java>
           <pom>
             <sortPom>
@@ -793,7 +793,7 @@
             <phase>generate-test-resources</phase>
             <configuration>
               <target>
-                <mkdir dir="${surefireTempDir}" />
+                <mkdir dir="${surefireTempDir}"/>
               </target>
             </configuration>
           </execution>
@@ -879,7 +879,7 @@
             <configuration>
               <propertyName>repository.proxy.url</propertyName>
               <repositories>
-                <proxyRepo />
+                <proxyRepo/>
               </repositories>
             </configuration>
           </execution>
@@ -989,7 +989,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore />
+                        <ignore/>
                       </action>
                     </pluginExecution>
                     <pluginExecution>
@@ -1003,7 +1003,7 @@
                         </goals>
                       </pluginExecutionFilter>
                       <action>
-                        <ignore />
+                        <ignore/>
                       </action>
                     </pluginExecution>
                   </pluginExecutions>
